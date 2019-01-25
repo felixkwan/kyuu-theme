@@ -77,8 +77,8 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 
 <!-- Fakeloader -->
-<script src="https://static.tumblr.com/mravxd7/GRYplvlbl/fakeloader.min.js"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fakeLoader.js/1.1.0/fakeLoader.min.css">
+<script src="https://static.tumblr.com/mravxd7/EU1plvmih/fakeloader.js"></script>
+<link rel="stylesheet" href="https://static.tumblr.com/mravxd7/70tplvlkb/fakeloader.css">
 
 <!-- END Tumblr Theme configuration -->
 
@@ -144,28 +144,18 @@ body {
     background: {color:Select};
 }
 
-.page-overlay {
-    height: 100%;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    pointer-events: none;
-    position: fixed;
-    opacity: 1;
-    transition: opacity 1.2s ease;
-    top: 0;
-    left: 0;
-    z-index: 9999;
-    color: {color:Background};
-}
-
-.page-overlay.hide {
-    opacity: 0;
-}
-
 #wrapper {
     margin: 0;
     padding: 0;
+}
+
+.wrapper {
+    opacity: 0;
+    transition: opacity 1.2s ease;
+}
+
+.wrapper.show {
+    opacity: 1;
 }
 
 .inner_wrapper {
@@ -987,12 +977,11 @@ s.parentNode.insertBefore(g,s)}(document,'script'));
 {/block:IfGoogleAnalyticsID}
 
 </head>
-<div class="page-overlay"></div>
 <body id="home" class="{block:IndexPage}indexpage{/block:IndexPage} {block:PermalinkPage}permalinkpage{/block:PermalinkPage}">
 
 <div id="fakeloader" class="fakeloader"></div>
 
-<div id="wrapper" class="{block:IndexPage}indexpage-wrapper{/block:IndexPage} clearfix">
+<div id="wrapper" class="wrapper clearfix">
 
 <div class="inner_wrapper">
 {block:TagPage}{/block:TagPage}
@@ -1449,5 +1438,5 @@ s.parentNode.insertBefore(g,s)}(document,'script'));
 <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/photoset-grid/1.0.1/jquery.photoset-grid.js"></script>
-<script src="https://static.tumblr.com/mravxd7/oAvplvl8y/main.min.js"></script>
+<script src="https://static.tumblr.com/mravxd7/Ogcplvmeq/main.min.js"></script>
 </html>
