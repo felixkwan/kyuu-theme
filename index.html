@@ -428,7 +428,7 @@ article {
     }
 
     article.layout_single .post_inner {
-        padding: 0 8%;
+        padding: 0 10px;
     }
 
     article.layout_two .post_inner {
@@ -675,22 +675,35 @@ article.type_link .link-wrapper a > i {
     display: inline-block;
 }
 
+
 article.layout_single .date-wrapper .divider {
-    width: 32%;
+    width: 33%;
 }
 
 article.layout_two .date-wrapper .divider {
-    width: 24%;
+    width: 25%;
 }
 
-.date-wrapper .divider:before {
+.date-wrapper .divider-left:before {
     position: absolute;
     content:'';
     top: 0;
     left: 0;
     display: block;
     height: 1px;
-    width: 100%;
+    width: 85%;
+    background: {color:Light grey};
+    transition: all .25s ease;
+}
+
+.date-wrapper .divider-right:before {
+    position: absolute;
+    content:'';
+    top: 0;
+    right: 0;
+    display: block;
+    height: 1px;
+    width: 85%;
     background: {color:Light grey};
     transition: all .25s ease;
 }
@@ -704,10 +717,11 @@ article.layout_two .date-wrapper .divider {
     text-align: center;
     margin: 0 auto;
     font-size: .8rem;
+    margin: 0 auto;
 }
 
 article.layout_single .post-footer .date-wrapper .date {
-    width: 33%;
+    width: 32%;
 }
 
 article.layout_two .post-footer .date-wrapper .date {
@@ -1306,7 +1320,7 @@ s.parentNode.insertBefore(g,s)}(document,'script'));
     <footer class="post-footer">
 
     <ul class="date-wrapper">
-        <li class="divider"></li>
+        <li class="divider divider-left"></li>
 
     {block:IfShowdate}
         <li class="date type_{select:Date format}">
@@ -1317,7 +1331,7 @@ s.parentNode.insertBefore(g,s)}(document,'script'));
         </li>
     {/block:IfShowdate}
 
-    <li class="divider"></li>
+    <li class="divider divider-right"></li>
     </ul>
 
     <ul class="post-meta">
