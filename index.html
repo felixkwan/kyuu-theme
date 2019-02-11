@@ -669,9 +669,12 @@ article.type_link .link-wrapper a > i {
     margin-right: 0;
 }
 
+.date-wrapper {
+     display: flex;
+}
+
 .date-wrapper .divider {
     position: relative;
-    vertical-align: middle;
     display: inline-block;
 }
 
@@ -687,7 +690,7 @@ article.layout_two .date-wrapper .divider {
 .date-wrapper .divider-left:before {
     position: absolute;
     content:'';
-    top: 0;
+    top: 50%;
     left: 0;
     display: block;
     height: 1px;
@@ -699,7 +702,7 @@ article.layout_two .date-wrapper .divider {
 .date-wrapper .divider-right:before {
     position: absolute;
     content:'';
-    top: 0;
+    top: 50%;
     right: 0;
     display: block;
     height: 1px;
